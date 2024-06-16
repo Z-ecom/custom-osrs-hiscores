@@ -1,0 +1,114 @@
+
+.skill-page {
+    display: flex;
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar {
+    width: 25%;
+  }
+  
+  .skill-list {
+    margin-bottom: 20px;
+  }
+  
+  .skill-list h3 {
+    font-size: 1.2em;
+  }
+  
+  .skill-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .skill-list li {
+    margin-bottom: 6px;
+  }
+  
+  .skill-list a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .skill-list a:hover {
+    text-decoration: underline;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding-left: 20px; /* Add some padding to separate sidebar from main content */
+  }
+  
+  .skill-navigation {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .skill-navigation h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+  }
+  
+  .pagination {
+    display: flex;
+    align-items: center;
+  }
+  
+  .skill-navigation p {
+    margin: 0 10px;
+  }
+  
+  .skill-navigation input[type="text"] {
+    width: 50px;
+    text-align: center;
+  }
+  
+  button {
+    padding: 8px 16px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .skill-table table {
+    width: 100%;
+    border-collapse: collapse;     
+  }
+  
+  .skill-table th, .skill-table td {
+    padding: 6px;
+    width: 1%;
+    text-align: left;
+    font-size: 0.9em; /* Adjust font size as needed */
+    height: 20px; /* Example: Set a fixed height */
+  }
+  
+  .skill-table th {
+    background-color: #f2f2f2;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .skill-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .skill-table tbody tr:hover {
+    background-color: #e0e0e0;
+  }

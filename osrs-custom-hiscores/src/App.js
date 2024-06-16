@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import HiscoresPage from './HiscoresPage';
 import SkillPage from './SkillPage.js';
 import PlayerPage from './PlayerPage';
 

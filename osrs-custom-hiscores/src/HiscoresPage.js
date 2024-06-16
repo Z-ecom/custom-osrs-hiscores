@@ -5,8 +5,7 @@ const HiscoresPage = () => {
     const [cachedHiscores, setCachedHiscores] = useState({});
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const [currentPage, setCurrentPage] = useState(1);
-    const pageSize = 25;
+    const [currentPage] = useState(1);    
 
     useEffect(() => {
         const fetchHiscores = async () => {

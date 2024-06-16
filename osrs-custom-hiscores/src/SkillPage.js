@@ -66,7 +66,22 @@ const SkillPage = () => {
             <div className="skill-navigation">
               <div>
                 <h2>{skillName} Highscores</h2>
-              </div>              
+              </div>
+              <div className="pagination">
+                <button onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1}>
+                  &lt; Prev
+                </button>
+                <p>Page: {currentPage}</p>
+                <button onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage >= totalPages}>
+                  Next &gt;
+                </button>
+                <input
+                  type="text"
+                  value={currentPage}
+                  onChange={handlePageInputChange}
+                  onBlur={() => fetchSkillRanks()} // Fetch new page on blur
+                />
+              </div>
             </div>
             <div className="skill-table">
               <table>
@@ -91,21 +106,6 @@ const SkillPage = () => {
                   ))}
                 </tbody>
               </table>
-              <div className="pagination">
-                <button onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1}>
-                  &lt; Prev
-                </button>
-                <p>Page: {currentPage}</p>
-                <button onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage >= totalPages}>
-                  Next &gt;
-                </button>
-                <input
-                  type="text"
-                  value={currentPage}
-                  onChange={handlePageInputChange}
-                  onBlur={() => fetchSkillRanks()} // Fetch new page on blur
-                />
-              </div>
             </div>
           </div>
         </div>
